@@ -16,7 +16,7 @@ public class User implements Serializable {
 	private String password;
 	private int score;
 
-	User(String username, String email, String password, int score) {
+	public User(String username, String email, String password, int score) {
 		this.username = username;
 		this.email = email;
 		this.password = password;
@@ -70,9 +70,11 @@ public class User implements Serializable {
 
 		try {
 			File userFile = new File("usernamelist.txt");
-			userFile.delete();
+			if (!userFile.delete()) {
+				System.out.println("Couldn't delete file [User.java: 75]");
+			}
 		} catch (Exception e) {
-			System.out.println("User.java Line 75: " + e.toString());
+			System.out.println("User.java Line 77: " + e.toString());
 		}
 
 		try {
@@ -81,7 +83,7 @@ public class User implements Serializable {
 			File newfile = new File("usernamelist.txt");
 			oldfile.renameTo(newfile);
 		} catch (Exception e) {
-			System.out.println("User.java Line 84: " + e.toString());
+			System.out.println("User.java Line 86: " + e.toString());
 		}
 	}
 

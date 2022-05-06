@@ -21,7 +21,7 @@ public class DeletePage extends JFrame {
 	private ImageIcon image, background;
 	private Font title, textFieldFont, errorUpdateFont, labelFont, buttonFont;
 
-	DeletePage(User user, int x, int y) {
+	public DeletePage(User user, int x, int y) {
 		image = new ImageIcon("images/logo.png");
 		background = new ImageIcon("images/aboutBack.png");
 

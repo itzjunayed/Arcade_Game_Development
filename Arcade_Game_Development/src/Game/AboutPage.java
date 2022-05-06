@@ -17,7 +17,7 @@ public class AboutPage extends JFrame {
 	private JButton back;
 	private Font labelFont, textFont;
 
-	AboutPage(int x, int y) {
+	public AboutPage(int x, int y) {
 		image = new ImageIcon("images/logo.png");
 		background = new ImageIcon("images/space.gif");
 

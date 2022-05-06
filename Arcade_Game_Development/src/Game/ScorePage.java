@@ -36,7 +36,7 @@ public class ScorePage extends JFrame implements Serializable {
 	private JScrollPane scrollPane;
 	private Font labelFont, buttonFont, textFont;
 
-	ScorePage(int x, int y) throws IOException {
+	public ScorePage(int x, int y) throws IOException {
 		image = new ImageIcon("images/logo.png");
 		background = new ImageIcon("images/aboutBack.png");
 

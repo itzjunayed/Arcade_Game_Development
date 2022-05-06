@@ -10,7 +10,6 @@ public class GamePage extends JFrame implements Runnable {
 
 	public GamePage(User user) {
 		thread = new Thread(this, "Dispose");
-//		thread1 = new Thread(this, "Dispose");
 		rocket = new Rocket(this, user);
 		rocket.start();
 		this.add(rocket);

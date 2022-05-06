@@ -18,7 +18,7 @@ public class UserPage extends JFrame {
 	private ImageIcon image, background;
 	private Font labelFont, textFont;
 
-	UserPage(User user, int x, int y) {
+	public UserPage(User user, int x, int y) {
 		labelFont = new Font("Roboto", Font.BOLD, 30);
 		textFont = new Font("Gotham", Font.PLAIN, 20);
 

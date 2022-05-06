@@ -26,7 +26,7 @@ public class LoginPage extends JFrame {
 	private Font titleFont, labelFont, textFont, errorFont;
 	private Color title, login, home;
 
-	LoginPage(int x, int y) {
+	public LoginPage(int x, int y) {
 		titleFont = new Font("Roboto", Font.BOLD, 30);
 		labelFont = new Font("Gotham", Font.BOLD, 20);
 		textFont = new Font("Gotham", Font.PLAIN, 20);

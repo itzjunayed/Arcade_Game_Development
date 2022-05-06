@@ -17,7 +17,7 @@ public class PersonalPage extends JFrame {
 	private JLabel label, iconLabel, userLabel, emailLabel, scoreLabel;
 	private JButton editButton, deleteButton, backButton;
 
-	PersonalPage(User user, int x, int y) {
+	public PersonalPage(User user, int x, int y) {
 		labelFont = new Font("Roboto", Font.BOLD, 30);
 		buttonFont = new Font("Gotham", Font.BOLD, 20);
 		textFont = new Font("Roboto", Font.PLAIN, 20);

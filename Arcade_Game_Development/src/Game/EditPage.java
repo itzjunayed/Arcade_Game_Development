@@ -26,7 +26,7 @@ public class EditPage extends JFrame {
 	private ImageIcon image, background;
 	private Font updateFont, errorUpdateFont, labelFont, buttonFont;
 
-	EditPage(User user, int x, int y) {
+	public EditPage(User user, int x, int y) {
 		image = new ImageIcon("images/logo.png");
 		background = new ImageIcon("images/aboutBack.png");
 
