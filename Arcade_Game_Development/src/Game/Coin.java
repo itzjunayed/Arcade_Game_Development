@@ -13,7 +13,6 @@ public class Coin extends JLabel implements Runnable {
 
 	public Coin(Rocket rocket) {
 		this.rocKet = rocket;
-
 		threadCoin = new Thread(this);
 		random = new Random();
 		setIcon(new ImageIcon("icons/coin.png"));
@@ -31,7 +30,7 @@ public class Coin extends JLabel implements Runnable {
 				rocketX = rocKet.rocket.getX();
 				rocketY = rocKet.rocket.getY();
 				if (y + 24 >= rocketY && y + 24 <= rocketY + 10 && x > rocketX && rocketX + 200 > x + 48) {
-					rocKet.score++;
+					++rocKet.score;
 					rocKet.labelScore.setText(rocKet.score + "");
 					break;
 				}
@@ -42,7 +41,7 @@ public class Coin extends JLabel implements Runnable {
 			rocKet.validate();
 			rocKet.repaint();
 		} catch (Exception ex) {
-			System.out.println("Error occured on coin.java Line:43 " + ex.toString());
+			System.out.println("Error occured on coin.java Line:44 " + ex.toString());
 		}
 	}
 }

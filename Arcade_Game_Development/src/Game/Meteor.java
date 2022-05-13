@@ -25,19 +25,19 @@ public class Meteor extends JLabel implements Runnable {
 	public void run() {
 		int x = random.nextInt(rocketCrash.getBounds().width - 150) + 50;
 		int y = 35;
-		int rocketX, boulY;
+		int rocketX, rocketY;
 		try {
 			while (rocketCrash.life > 0 && getY() <= rocketCrash.getBounds().height - 20) {
 				setBounds(x, y, 100, 100);
 				rocketX = rocketCrash.rocket.getX();
-				boulY = rocketCrash.rocket.getY();
-				if (y + 24 >= boulY && y + 24 <= boulY + 10 && x > rocketX && rocketX + 200 > x + 48) {
-					rocketCrash.life--;
+				rocketY = rocketCrash.rocket.getY();
+				if (y + 24 >= rocketY && y + 24 <= rocketY + 10 && x > rocketX && rocketX + 200 > x + 48) {
+					--rocketCrash.life;
 					rocketCrash.remove(rocketCrash.labelLife[rocketCrash.life]);
 					rocketCrash.labelScore.setText(rocketCrash.score + "");
 					break;
 				}
-				Thread.sleep(80);
+				Thread.sleep(90);
 				y += diff;
 			}
 			rocketCrash.remove(this);

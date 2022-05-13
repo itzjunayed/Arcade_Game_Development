@@ -29,7 +29,6 @@ public class GamePage extends JFrame implements Runnable {
 	@Override
 	public void run() {
 		dispose();
-
 	}
 
 }

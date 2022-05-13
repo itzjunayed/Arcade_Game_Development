@@ -26,7 +26,7 @@ public class Rocket extends JPanel implements Runnable, KeyListener {
 		this.main = main;
 		this.user = user;
 		setLayout(null);
-		setBackground(Color.white);
+		setBackground(Color.black);
 		setSize(1200, 700);
 		area = getBounds();
 
@@ -43,6 +43,7 @@ public class Rocket extends JPanel implements Runnable, KeyListener {
 
 		labelScore = new JLabel("0");
 		labelScore.setBounds(getBounds().width - 70, 2, 150, 30);
+		labelScore.setForeground(Color.white);
 		labelScore.setFont(new Font("Arial", Font.BOLD, 32));
 		add(labelScore);
 
