@@ -12,9 +12,8 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 public class Rocket extends JPanel implements Runnable, KeyListener {
-	JLabel rocket;
+	JLabel rocket, labelScore, labelLife[];
 	Rectangle area;
-	JLabel labelScore, labelLife[];
 	private Thread threadOne, threadTwo;
 	private Coin coin;
 	private Meteor meteor;

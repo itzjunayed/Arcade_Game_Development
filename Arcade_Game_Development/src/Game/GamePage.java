@@ -4,7 +4,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
 public class GamePage extends JFrame implements Runnable {
-	Thread thread, thread1;
+	Thread thread;
 	Rocket rocket;
 	private ImageIcon image;
 

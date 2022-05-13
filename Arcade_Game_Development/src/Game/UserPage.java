@@ -69,7 +69,6 @@ public class UserPage extends JFrame {
 		playButton.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent e) {
-				Point point = getLocation();
 				GamePage game = new GamePage(user);
 				game.setVisible(true);
 				dispose();
