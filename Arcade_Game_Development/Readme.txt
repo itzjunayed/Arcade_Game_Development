@@ -3,5 +3,5 @@
 3. Extract the zip file
 4. Go to run folder then click Meteor Dodge.jar or Meteor Dodge.lnk file
 5. Create an account then login to your account (you can also edit and delete your account)
-6. Play the game
+6. Play the game using left and right arrow key instead of (a,s,A,S)
 7. Enjoy !!!
