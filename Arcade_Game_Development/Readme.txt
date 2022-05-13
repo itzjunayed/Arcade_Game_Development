@@ -1,4 +1,4 @@
-1. Install Java in your desktop
+1. Install Java in your desktop and also Eclipse IDE if needed
 2. Download the zip file from https://github.com/itzjunayed/Arcade_Game_Development.git
 3. Extract the zip file
 4. Go to run folder then click Meteor Dodge.jar file OR 
