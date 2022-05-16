@@ -1,5 +1,5 @@
 # Arcade_Game_Development
-This is a arcade game project which made using java and swing for graphics.
+This is an arcade game project which made using java and swing for graphics.
 
 # Meteor Dodge
 ![image](https://user-images.githubusercontent.com/71440395/168279515-f847959c-f487-4315-ada4-d8b26439fbb4.png)
